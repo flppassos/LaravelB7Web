@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content .card{
+    background-color: cornsilk;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .card .info{
+    padding: 10px;
+}

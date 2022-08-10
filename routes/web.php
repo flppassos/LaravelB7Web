@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'index']);
+Route::get('/sair', [SiteController::class, 'sair']);
+Route::get('/usuarios/{qtd}', [SiteController::class, 'quantidade']);
+Route::get('/exec1', [SiteController::class, 'exec1']);
+Route::get('/exec2', [SiteController::class, 'exec2']);
+
+// Route::get('/', function () {
+//     return view('index');
+// });
